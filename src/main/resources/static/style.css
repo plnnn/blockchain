@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#blockchain {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    margin-right: 10px;
+}
+
+/* Additional CSS for animations and feedback */
+.loading-indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.new-data {
+    animation: fadeIn 2s;
+}
+
+
+.button-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.card-body {
+    background-color: #f7f7f7;
+}
+
+.card-text {
+    color: #343a40;
+}
+
